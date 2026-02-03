@@ -22,7 +22,7 @@ import requests
 @frappe.whitelist()
 def get_weight_from_php(docname):
     try:
-        # Get API from system settings
+        # Get API from system settings  
         api_url = frappe.db.get_single_value(
             "Weighing Machine Settings",
             "api_url"
